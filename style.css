@@ -1,0 +1,277 @@
+body {
+    background-color: #CFB580;
+    font-family: Georgia, "Times New Roman", serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER WITH BACKGROUND IMAGE (CLEAN - NO TEXT VIEW) */
+.header {
+    background-image: linear-gradient(rgba(116, 148, 140, 0.2), rgba(116, 148, 140, 0.4)), url('images/header.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #74948C; /* Fallback color */
+    text-align: center;
+    height: 250px; /* FIXED: Memaksa header terbuka setinggi 250px walaupun tanpa teks */
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+    color: white;
+    font-size: 42px;
+    font-style: normal !important;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Tambah shadow nipis bagi tulisan lagi jelas */
+}
+
+.header h1 i {
+    font-style: normal !important;
+}
+
+.header p {
+    color: white;
+    font-size: 18px;
+    margin-top: 12px;
+    margin-bottom: 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* NAVIGATION BAR */
+.navbar {
+    text-align: center;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    background-color: #864E3E;
+    padding: 12px 20px;
+    margin: 6px;
+    border-radius: 30px;
+    font-weight: bold;
+    display: inline-block;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    background-color: #74948C;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* CONTENT MAIN AREA */
+.content {
+    background-color: #FFFFFF;
+    width: 80%;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 40px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+.content h2 {
+    color: #864E3E;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    color: #864E3E;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* PROFILE IMAGE */
+.profile {
+    width: 250px;
+    border-radius: 25px;
+    margin-top: 15px;
+    border: 5px solid #864E3E;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+/* BUTTONS */
+.button-area {
+    margin-top: 30px;
+}
+
+.button {
+    text-decoration: none;
+    background-color: #864E3E;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 30px;
+    font-weight: bold;
+    margin: 5px;
+    display: inline-block;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #74948C;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+.footer {
+    background-color: #74948C;
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+    color: white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    font-size: 15px;
+    width: 100%;          
+    box-sizing: border-box; 
+}
+
+/* GALLERY IMAGES */
+.gallery-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 25px;
+    border: 5px solid #864E3E;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+}
+
+/* BASE TABLE STYLE */
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #74948C;
+    color: white;
+    padding: 15px 20px;
+    font-size: 18px;
+}
+
+td {
+    color: #864E3E;
+    padding: 15px 20px;
+    font-size: 17px;
+}
+
+/* ABOUT ME & EDUCATION & QUOTES & CONTACT TABLES */
+.about-table, .education-table, .quote-table, .contact-table {
+    width: 85%;
+    margin: auto;
+    background-color: #FFFDF9; 
+    border-radius: 20px;
+    overflow: hidden; 
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Table border radius fixes */
+table tr:first-child th:first-child { border-top-left-radius: 20px; }
+table tr:first-child th:last-child { border-top-right-radius: 20px; }
+table tr:last-child td:first-child { border-bottom-left-radius: 20px; }
+table tr:last-child td:last-child { border-bottom-right-radius: 20px; }
+
+/* EXTERNAL LINK */
+table a {
+    color: #864E3E;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+table a:hover {
+    color: #74948C;
+}
+
+/* HOBBY BOX */
+.hobby-box {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    text-align: justify;
+    padding: 15px;
+}
+
+.hobby-box img {
+    width: 250px;
+    border-radius: 20px;
+    border: 5px solid #864E3E;
+}
+
+.hobby-text {
+    flex: 1;
+    color: #864E3E;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* GIF */
+.quote-gif {
+    width: 180px;
+}
+
+/* TITLE COLOR */
+.blue-title {
+    color: #864E3E;
+}
+
+.contact-message {
+    font-style: italic;
+    color: #864E3E;
+    margin-top: 25px;
+    font-size: 17px;
+}
+
+.gallery-image:active {
+    transform: scale(0.95); 
+    transition: 0.1s;
+}
+
+/* CUTE INNER GALLERY GRID TABLE STYLING */
+.gallery-table {
+    width: 100%;
+    max-width: 850px;
+    margin: 20px auto;
+    background-color: #FFFDF9; 
+    border-radius: 25px;
+    padding: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+    border: 2px dashed #864E3E !important; 
+    border-collapse: separate !important; 
+}
+
+.gallery-table td {
+    background-color: #FFFFFF;
+    border: 1px solid #F1E7D7 !important; 
+    border-radius: 20px;
+    padding: 20px !important;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.02);
+}
+
+.gallery-table p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #864E3E;
+    margin-top: 10px;
+}
